@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        body{
+            margin:0;
+            height:100%;
+            background:#007fd5;
+            animation: bg 10s ease-in-out infinite;
+            -webkit-animation:bg 10s ease-in-out infinite;
+            -moz-animation:bg 10s ease-in-out infinite;
+
+        }
+        #cloud{
+            height:500px;
+            position:relative;
+            overflow: hidden;
+        }
+        #cloud div{
+            width:300%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        .one{
+            background:url("images/cloud_one.png");
+            animation: one 50s linear infinite;
+            -webkit-animation: one 50s linear infinite;
+
+        }
+        .two{
+            background:url("images/cloud_two.png");
+            animation: one 75s linear infinite;
+            -webkit-animation: one 75s linear infinite;
+        }
+        .three{
+            background:url("images/cloud_three.png");
+            animation: one 100s linear infinite;
+            -webkit-animation: one 100s linear infinite;
+        }
+        @keyframes bg{
+            0% {
+                background: #007fd5;
+                color: #007fd5;
+            }
+            50% {
+                background: #000;
+                color: #a3d9ff
+            }
+            100% {
+                background: #007fd5;
+                color: #007fd5;
+            }
+        }
+        @-webkit-keyframes bg{
+            0% {
+                background: #007fd5;
+                color: #007fd5;
+            }
+            50% {
+                background: #000;
+                color: #a3d9ff
+            }
+            100% {
+                background: #007fd5;
+                color: #007fd5;
+            }
+        }
+        @-moz-keyframes bg{
+           0% {
+                background: #007fd5;
+                color: #007fd5;
+            }
+            50% {
+                background: #000;
+                color: #a3d9ff;
+            }
+            100% {
+                background: #007fd5;
+                color: #007fd5;
+            }
+        }
+        @keyframes one{
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -200%;
+            }
+        }
+        @-webkit-keyframes one{
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -200%;
+            }
+        }
+        </style>
+
+    </head>
+    <body>
+    <div id="cloud">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    </body>
+</html>
